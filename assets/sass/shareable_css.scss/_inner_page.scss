@@ -1,0 +1,32 @@
+// inner-page_and_side-ber-area start
+.inner-page_and_side-ber-area {
+    border: $border;
+    // background-color: $white;
+    margin: 80px 0px;
+    .inner-page_and_side-ber-area_content {
+        border: $border;
+        display: flex;
+    
+        // inner_page_area start
+        .inner_page_area {
+            border: $border;
+            flex: 1;
+            margin-right: 20px;
+            // background-color: $white;
+            //  background-color: $white;
+            .inner_page_area_content {
+                border: $border;
+                // inner_page_all_content start
+                .inner_page_all_content {
+                    border: $border;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+                // inner_page_all_content end
+            }
+        }
+        // inner_page_area end
+    }
+}
+// inner-page_and_side-ber-area end

@@ -1,0 +1,37 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./core/typography";
+@import "./core/reset";
+@import "./core/root";
+@import "./vendors/grid";
+@import "./layouts/navigation";
+@import "./layouts/footer";
+@import "./shareable_css.scss/button_area";
+@import "./shareable_css.scss/content_title";
+@import "./shareable_css.scss/box_content_area";
+@import "./shareable_css.scss/social_work_image_card";
+@import "./shareable_css.scss/book_card";
+@import "./shareable_css.scss/text_slider_area";
+@import "./shareable_css.scss/blog_card";
+
+@import "./shareable_css.scss/inner_page";
+@import "./shareable_css.scss/side_ber_area";
+
+// page_import_start
+
+@import "./pages/index.scss";
+@import "./pages/contact.scss";
+// page_import_end
+
+// all area main class start (For Responsive)
+.header_area_full,
+.feature_area_full,
+.about_area,
+.servicess_area,
+.contact_us_area_full,
+.map_area_full
+.footer_area
+{
+// display: none;
+}
+// all area main class end

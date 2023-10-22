@@ -1,0 +1,42 @@
+// small_count-area start
+.small_count_area{
+    border: $border;
+    padding: 20px;
+    margin-bottom: 19px;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    .small_count-area_content{
+        border: $border;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        // count_item start
+        .count_item{
+            border: $border;
+            display: flex;
+            .count_number_area{
+                border: $border;
+                .number_text{
+                    border: $border;
+                    font-family: $font_bangla;
+                    font-size: 35px;
+                    color: $brand_color;
+                }
+            }
+            .count_text_area{
+                border: $border;
+                align-items: center;
+                display: flex;
+                margin-left: 15px;
+            
+                .count_text{
+                    border: $border;
+                    font-family: $font_bangla;
+                    font-size: 20px;
+                    color: $white;
+                }
+            }
+        }
+        // count_item end
+    }
+}
+// small_count-area end

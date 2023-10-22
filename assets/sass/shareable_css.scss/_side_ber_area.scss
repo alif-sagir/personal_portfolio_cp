@@ -1,0 +1,48 @@
+// side_ber_area start
+.side_ber_area {
+    border: $border;
+    width: 300px;
+    background-color: $white;
+    padding: 40px 20px;
+
+    .side_ber_area_content {
+        border: $border;
+        // search_area start
+        .search_area{
+            border: $border;
+            form{
+                border: $border;
+                position: relative;
+                input{
+                    border: $border;
+                    font-family: $font_bangla;
+                    font-size: 14px;
+                    color: $black;
+                    outline: 0;
+                    background-color:$off_white;
+                    width: 100%;
+                    padding: 10px 65px 10px 10px;
+                }
+                .button_area{
+                    border: $border;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    height: 100%;
+                    width: 55px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    background-color: $brand_color;
+                    i{
+                        border: $border;
+                        font-size: 10px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        // search_area end
+    }
+}
+// side_ber_area end
