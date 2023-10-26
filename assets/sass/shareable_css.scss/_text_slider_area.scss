@@ -40,7 +40,9 @@
         background-color: $blue_white;
         justify-content: center;
         display: flex;
-      
+        z-index: 1;
+        position: relative;
+    
         .slider_text_area {
             border: $border;
             width: 850px;

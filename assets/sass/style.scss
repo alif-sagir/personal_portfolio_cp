@@ -16,10 +16,14 @@
 
 @import "./shareable_css.scss/inner_page";
 @import "./shareable_css.scss/side_ber_area";
+@import "./shareable_css.scss/pagination_area";
+@import "./shareable_css.scss/inner_page_details";
+@import "./shareable_css.scss/comment_area";
 
 // page_import_start
 
 @import "./pages/index.scss";
+@import "./pages/about.scss";
 @import "./pages/contact.scss";
 // page_import_end
 
