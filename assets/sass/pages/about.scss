@@ -2,9 +2,19 @@
 .about_area {
     border: $border;
     margin-top: 80px;
-
+    position: relative;
+    &::before {
+        content: "";
+        width: 55%;
+        height: 40%;
+        background-image: url(../images/bg_dote_image/bg_dote.png);
+        position: absolute;
+        top: -40px;
+        left: 20px;
+    }
     .about_area_content {
         border: $border;
+        position: relative;
         // personsl_info_area start
         .personsl_info_area {
             border: $border;
@@ -32,6 +42,8 @@
                     border: $border;
                     ul {
                         border: $border;
+                        gap: 7px;
+                        display: grid;
                         li {
                             border: $border;
                             .title {

@@ -4,15 +4,26 @@
     padding: 20px;
     margin-bottom: 19px;
     background-color: rgba(0, 0, 0, 0.5019607843);
+    @include xs{
+       display: none;
+    }
     .small_count-area_content{
         border: $border;
         display: flex;
         justify-content: space-between;
         gap: 30px;
+        @include xs{
+            display: grid;
+            justify-content: center;
+            gap: 20px;
+        }
         // count_item start
         .count_item{
             border: $border;
             display: flex;
+            @include xs{
+               justify-content: center;
+            }
             .count_number_area{
                 border: $border;
                 .number_text{
@@ -27,12 +38,17 @@
                 align-items: center;
                 display: flex;
                 margin-left: 15px;
-            
+                @include xs{
+                    margin-left: 8px;
+                }
                 .count_text{
                     border: $border;
                     font-family: $font_bangla;
                     font-size: 20px;
                     color: $white;
+                    @include xs{
+                        font-size: 10px;
+                    }
                 }
             }
         }

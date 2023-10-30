@@ -3,6 +3,9 @@
     border: $border;
     background-color: $white;
     padding: 20px 0px;
+    @include xs{
+        padding: 12px 0px;
+     }
     position: sticky;
     top: 0px;
     z-index: 999;
@@ -18,6 +21,9 @@
             display: flex;
             border-right: 1px solid $brand_color;
             padding-right: 15px;
+            @include xs{
+                width: 100px;
+            }
             img {
                 border: $border;
                 width: 100%;
@@ -25,6 +31,15 @@
         }
         .navigation_menu_area {
             border: $border;
+            @include xs{
+               display: none;
+            }
+            @include sm{
+               display: none;
+            }
+            @include md{
+               display: none;
+            }
             ul {
                 border: $border;
                 display: flex;
@@ -53,6 +68,31 @@
                 }
             }
         }
+        // responsive_menu_area start
+        .responsive_menu_area{
+            border: $border;
+            display: none;
+            @include xs{
+                display: block;
+            }
+            @include sm{
+                display: block;
+            }
+            @include md{
+                display: block;
+            }
+            .responsive_menu_icon{
+                border: $border;
+                align-items: center;
+                display: flex;            
+                i{
+                    border: $border;
+                    color: $brand_color;
+                    font-size: 24px;
+                }
+            }
+        }
+        // responsive_menu_area end
     }
 }
 // navigation_area end

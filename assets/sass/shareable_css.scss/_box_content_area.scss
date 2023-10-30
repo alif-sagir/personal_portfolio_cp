@@ -1,9 +1,12 @@
 // box_content_area atart
 .box_content_area {
     border: $border;
-    padding: 160px 0px;
+    // padding: 160px 0px;
     position: relative;
     overflow: hidden;
+    background-color: $blue_white;
+    padding-top: 40px;
+    padding-bottom: 0px;
     &::after {
         content: "";
         background-image: url(../images/bg_dote_image/bg_dote.png);

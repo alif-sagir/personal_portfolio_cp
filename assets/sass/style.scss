@@ -19,6 +19,7 @@
 @import "./shareable_css.scss/pagination_area";
 @import "./shareable_css.scss/inner_page_details";
 @import "./shareable_css.scss/comment_area";
+@import "./shareable_css.scss/scroll-button";
 
 // page_import_start
 
@@ -28,12 +29,16 @@
 // page_import_end
 
 // all area main class start (For Responsive)
-.header_area_full,
-.feature_area_full,
-.about_area,
-.servicess_area,
-.contact_us_area_full,
-.map_area_full
+.navigation_area,
+.banner_area,
+.news-area,
+.social_work_area,
+.count_area,
+.book_review_area,
+.union_porishad_area,
+.text_slider_area,
+.blog_area,
+.scroll-button,
 .footer_area
 {
 // display: none;

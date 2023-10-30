@@ -22,6 +22,9 @@
             border: $border;
             display: flex;
             justify-content: space-between;
+            @include xs{
+                display: block;
+            }
 
             // left-area start
             .left-area_content {
@@ -29,6 +32,11 @@
                 align-items: center;
                 display: flex;
                 flex: 1;
+                @include xs{
+                    display: block;
+                    height: calc(100vh - 48px);
+                    margin-top: 50px;
+                }
                 .left-area {
                     border: $border;
                    
@@ -37,7 +45,9 @@
                     display: flex;
                     position: relative;
                     padding: 50px 0px 50px 50px;
-                  
+                    @include xs{
+                        padding: 0px;
+                    }
                     &::after {
                         content: "";
                         width: 50%;
@@ -47,9 +57,9 @@
                         top: 0px;
                         left: 0px;
                         z-index: 9;
-                        // border-left: 3px solid $brand_color;
-                        // border-left-width: 20px;
-                        // border-bottom: 3px solid red;
+                        @include xs{
+                            background-color: transparent;
+                        }
                     }
                     .left_area_content {
                         border: $border;
@@ -59,6 +69,9 @@
                             font-size: 28px;
                             font-family: "bangla-font";
                             color: $white;
+                            @include xs{
+                                font-size: 16px;
+                            }
                         }
                         .name_text {
                             border: $border;
@@ -67,6 +80,10 @@
                             font-weight: bold;
                             color: $brand_color;
                             padding: 30px 0px 50px 0px;
+                            @include xs{
+                                font-size: 22px;
+                                padding: 10px 0px 30px 0px;
+                            }
                         }
                         .description_text {
                             border: $border;
@@ -75,6 +92,9 @@
                             color: $white;
                             text-align: justify;
                             margin-bottom: 50px;
+                            @include xs{
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -88,10 +108,22 @@
                 align-items: end;
                 display: flex;
                 margin-left: 50px;
+                @include xs{
+                    width: unset;
+                    margin-left:unset;
+                    justify-content: center;
+                    display: none;
+                }
                 .image_area {
                     border: $border;
                     width: 100%;
+                    @include xs{
+                        width: 200px;
+                        border: 3px solid $white;
+                        border-radius: 50%;
+                        overflow: hidden;
                     
+                    }
                     // padding: 15px;
                     // background-color: $brand_color;
                     img {
