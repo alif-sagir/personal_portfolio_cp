@@ -36,7 +36,7 @@
     <meta name="twitter:description" content="Amber Personal portfolio">
     <meta name="twitter:image" content="./assets/images/logo/dark_logo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Home</title>
+    <title>আমাদের সম্পর্কে</title>
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
@@ -63,25 +63,69 @@
                             </a>
                         </li>
                         <li>
-                            <a href="social_work.html" class="menu_text">সামাজিক কাজ</a>
+                            <a href="contemporary.html" class="menu_text">সমসাময়িক
+                            </a>
                         </li>
                         <li>
-                            <a href="union_porishad.html" class="menu_text">ইউনিয়ন পরিষদ</a>
-                        </li>
-                        <li>
-                            <a href="news.html" class="menu_text">সংবাদ</a>
+                            <a href="social_work.html" class="menu_text">সামাজিক কাজ
+                            </a>
                         </li>
                         <li>
                             <a href="book_review.html" class="menu_text">বই পর্যালোচনা</a>
                         </li>
                         <li>
-                            <a href="blog.html" class="menu_text">ব্লগ</a>
+                            <button class="menu_text" onclick="inner_menu.classList.toggle('active_alass')">ব্লগ
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+
+                            <ul id="inner_menu">
+                                <li>
+                                    <a href="blog_islam.html" class="menu_text">ইসলাম</a>
+                                </li>
+                                <li>
+                                    <a href="blog_Islamic-movement.html" class="menu_text">ইসলামী আন্দোলন</a>
+                                </li>
+                                <li>
+                                    <a href="blog_bangladesh.html" class="menu_text">বাংলাদেশ</a>
+                                </li>
+                                <li>
+                                    <a href="blog_politics.html" class="menu_text">রাজনীতি</a>
+                                </li>
+                                <li>
+                                    <a href="blog_history.html" class="menu_text">ইতিহাস</a>
+                                </li>
+                                <li>
+                                    <a href="blog_misc.html" class="menu_text">বিবিধ</a>
+                                </li>
+                            </ul>
                         </li>
+                        <li>
+                            <button class="menu_text" onclick="inner_menuu.classList.toggle('active_alass')">গ্যালারি
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                            <ul id="inner_menuu">
+                                <li>
+                                    <a href="photo_gallery.html" class="menu_text">ফটো গ্যালারি</a>
+                                </li>
+                                <li>
+                                    <a href="video_gallery.html" class="menu_text">ভিডিও গ্যালারি</a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <li>
                             <a href="contact.html" class="menu_text">যোগাযোগ</a>
                         </li>
                     </ul>
                 </div>
+
+                <!-- responsive_menu_area start -->
+                <div class="responsive_menu_area">
+                    <a href="#" class="responsive_menu_icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <!-- responsive_menu_area end -->
             </div>
         </div>
     </nav>
@@ -115,12 +159,12 @@
                                 <li>
                                     <span class="title">নামের প্রথম অংশ</span>
                                     <span class="spagee">:</span>
-                                    <span class="details">নুর মোহাম্মদ</span>
+                                    <span class="details">রাজিবুর </span>
                                 </li>
                                 <li>
                                     <span class="title">নামের শেষাংশ</span>
                                     <span class="spagee">:</span>
-                                    <span class="details">আবু তাহের</span>
+                                    <span class="details">রহমান</span>
                                 </li>
                                 <li>
                                     <span class="title">জন্ম তারিখ</span>
@@ -146,12 +190,12 @@
                                 <li>
                                     <span class="title">পেশা</span>
                                     <span class="spagee">:</span>
-                                    <span class="details">software engineer</span>
+                                    <span class="details">Software engineer</span>
                                 </li>
                                 <li>
                                     <span class="title">ঠিকানা</span>
                                     <span class="spagee">:</span>
-                                    <span class="details">বগুড়া</span>
+                                    <span class="details">ঢাকা</span>
                                 </li>
                                 <li>
                                     <span class="title">ফোন</span>
@@ -166,7 +210,7 @@
                                 <li>
                                     <span class="title">Linkedin</span>
                                     <span class="spagee">:</span>
-                                    <a href="#" class="details">Noormohammad</a>
+                                    <a href="#" class="details">Abcdefghij</a>
                                 </li>
                             </ul>
                         </div>
@@ -181,7 +225,8 @@
                     <div class="row">
                         <!--  t -->
                         <div class="col-md-12 col-lg-6">
-                            <div class="education_area education_and_experience_area" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="education_area education_and_experience_area" data-aos="fade-right"
+                                data-aos-duration="1000">
                                 <!-- item_title start -->
                                 <div class="item_title">
                                     <h2 class="item_title_text">শিক্ষাগত যোগ্যতা</h2>
@@ -219,9 +264,10 @@
                         <!-- education_area end -->
                         <!-- experience_area start -->
                         <div class="col-md-12 col-lg-6">
-                            <div class="experience_area education_and_experience_area" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="experience_area education_and_experience_area" data-aos="fade-left"
+                                data-aos-duration="1000">
                                 <!-- item_title start -->
-                                <div class="item_title" >
+                                <div class="item_title">
                                     <h2 class="item_title_text">অভিজ্ঞতা</h2>
                                 </div>
                                 <!-- item_title end -->
@@ -234,13 +280,13 @@
                                     </div>
                                     <div class="item_content_details">
                                         <div class="year">
-                                            <p class="year_text">2018 - 2020</p>
+                                            <p class="year_text">2022 - 2023</p>
                                         </div>
                                         <div class="title">
-                                            <p class="itemm_text">ইউপি চেয়ারম্যান</p>
+                                            <p class="itemm_text">কেন্দ্রীয় সভাপতি ICS</p>
                                         </div>
                                         <div class="institution_name">
-                                            <p class="institution_name_text">বগুড়া</p>
+                                            <p class="institution_name_text">ঢাকা</p>
                                         </div>
                                         <div class="discription">
                                             <p class="discription_text">সততায় অন্তরের প্রশান্তি। নাজাত লাভ, জান্নাত
@@ -264,15 +310,15 @@
     </div>
     <!-- about_area end -->
 
-       <!-- scroll_button_area start -->
-       <a href="#scroll_top" class="scroll-button">
+    <!-- scroll_button_area start -->
+    <a href="#scroll_top" class="scroll-button">
         <span class="icon">
             <i class="fa-solid fa-angle-up"></i>
         </span>
     </a>
     <!-- scroll_button_area end -->
 
-    <!-- footer_area start -->
+      <!-- footer_area start -->
     <footer class="footer_area" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="footer_area_content">
@@ -291,23 +337,25 @@
                                 <a href="about.html" class="menu_text">আমাদের সম্পর্কে</a>
                             </li>
                             <li>
+                                <a href="contemporary.html" class="menu_text">সমসাময়িক</a>
+                            </li>
+                            <li>
                                 <a href="social_work.html" class="menu_text">সামাজিক কাজ</a>
-                            </li>
-                            <li>
-                                <a href="union_porishad.html" class="menu_text">ইউনিয়ন পরিষদ</a>
-                            </li>
-                            <li>
-                                <a href="news.html" class="menu_text">সংবাদ</a>
                             </li>
                             <li>
                                 <a href="book_review.html" class="menu_text">বই পর্যালোচনা</a>
                             </li>
+
                             <li>
-                                <a href="blog.html" class="menu_text">ব্লগ</a>
+                                <a href="photo_gallery.html" class="menu_text">ফটো গ্যালারি</a>
+                            </li>
+                            <li>
+                                <a href="video_gallery.html" class="menu_text">ভিডিও গ্যালারি</a>
                             </li>
                             <li>
                                 <a href="contact.html" class="menu_text">যোগাযোগ</a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -326,21 +374,24 @@
                                 </div>
                                 <div class="importent_link_area">
                                     <ul>
+
                                         <li>
-                                            <a href="#" target="blank">সামাজিক কাজ</a>
+                                            <a href="blog_islam.html" class="menu_text">ইসলাম</a>
                                         </li>
                                         <li>
-                                            <a href="#" target="blank">ইউনিয়ন পরিষদ
-                                            </a>
+                                            <a href="blog_Islamic-movement.html" class="menu_text">ইসলামী আন্দোলন</a>
                                         </li>
                                         <li>
-                                            <a href="#" target="blank">রাজনীতি</a>
+                                            <a href="blog_bangladesh.html" class="menu_text">বাংলাদেশ</a>
                                         </li>
                                         <li>
-                                            <a href="#" target="blank">বই পর্যালোচনা</a>
+                                            <a href="blog_politics.html" class="menu_text">রাজনীতি</a>
                                         </li>
                                         <li>
-                                            <a href="#" target="blank">ব্লগ</a>
+                                            <a href="blog_history.html" class="menu_text">ইতিহাস</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_misc.html" class="menu_text">বিবিধ</a>
                                         </li>
 
                                     </ul>
@@ -420,7 +471,7 @@
                     <!-- copy-write_area start -->
                     <div class="copy-write_area">
                         <span class="copy-write_text">
-                            কপিরাইট © 2023 <a href="#" class="text">নুর মোহাম্মদ আবু তাহের</a>
+                            কপিরাইট © 2023 <a href="#" class="text">রাজিবুর রহমান</a>
                         </span>
                     </div>
                     <!-- copy-write_area end -->
